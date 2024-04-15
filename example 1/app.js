@@ -223,12 +223,6 @@ const createWebRtcTransport = async (callback) => {
   try {
     // https://mediasoup.org/documentation/v3/mediasoup/api/#WebRtcTransportOptions
     const webRtcTransport_options = {
-      listenIps: [
-        {
-          ip: '0.0.0.0', // replace with relevant IP address
-          announcedIp: '127.0.0.1',
-        }
-      ],
       enableUdp: true,
       enableTcp: true,
       preferUdp: true,
